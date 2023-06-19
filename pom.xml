@@ -15,7 +15,9 @@
 	<packaging>pom</packaging>
 
 	<modules>
+		<module>tanguo-common</module>
 		<module>tanguo-first-service</module>
+		<module>tanguo-second-service</module>
 	</modules>
 
 	<properties>

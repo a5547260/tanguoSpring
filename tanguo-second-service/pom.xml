@@ -9,10 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-	<artifactId>tanguo-first-service</artifactId>
+	<artifactId>tanguo-second-service</artifactId>
 
 	<dependencies>
-
 		<dependency>
 			<groupId>com.tanguo</groupId>
 			<artifactId>tanguo-common</artifactId>

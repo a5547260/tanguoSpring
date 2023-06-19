@@ -7,15 +7,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="tanguo-first-service" />
+        <module name="tanguo-common" />
+        <module name="tanguo-second-service" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="tanguo-second-service" target="8" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="tanguo-common" options="-parameters" />
       <module name="tanguo-first-service" options="-parameters" />
+      <module name="tanguo-second-service" options="-parameters" />
       <module name="tanguoSpring" options="-parameters" />
     </option>
   </component>
