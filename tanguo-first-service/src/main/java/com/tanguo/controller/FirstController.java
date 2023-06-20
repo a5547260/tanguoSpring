@@ -4,7 +4,6 @@ import java.util.List;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,11 +18,11 @@ import lombok.AllArgsConstructor;
 
 @RestController
 @AllArgsConstructor
-@RequestMapping("/test")
-@Api(value = "test", tags = "test")
-public class TestController {
-	@Autowired
-	private ScoreDistributionService scoreDistributionService;
+@RequestMapping("/first")
+@Api(value = "first", tags = "first")
+public class FirstController {
+
+	private final ScoreDistributionService scoreDistributionService;
 
 	@ApiOperation("demo1")
 	@GetMapping(value = "/demo1")
@@ -32,6 +31,6 @@ public class TestController {
 			.list();
 		System.err.println(list.get(0)
 			.getName());
-		System.err.println("aaaaaa");
+		System.err.println("first");
 	}
 }
